@@ -1,0 +1,41 @@
+[workspace]
+members = []
+resolver = "2"
+
+[workspace.lints.clippy]
+unwrap_used = "deny"
+
+[workspace.package]
+authors = ["wuliya336 <3369906077@qq.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/puniyu/puniyu"
+repository = "https://github.com/zoui-dev/zoui"
+edition = "2024"
+rust-version = "1.96.0"
+
+[workspace.dependencies]
+
+[package]
+name = "zoui"
+version = "0.1.0"
+description = "zoui"
+authors.workspace = true
+license.workspace = true
+readme.workspace = true
+homepage.workspace = true
+repository.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+serde = { version = "1.0.229" }
+serde_json = { version = "1.0.151" }
+thiserror = { version = "2.0.20" }
+smol_str = { version = "0.3.6" }
+validator = { version = "0.21.0" }
+uuid = { version = "1.0", default-features = false }
+regex = { version = "1.0" }
